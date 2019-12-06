@@ -7,8 +7,16 @@
     <meta name="Description" content="Themis Criminal Page">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/favicon.png"/>
-    <link rel="stylesheet" href="css/Login.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/util.css" />
+    <!-- PROGRESIVE -->
+    <meta name="theme-color" content="#095B80" />
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="/img/icons/icon-152x152.png">
+
    
     <title>Login Test</title>
 </head>
@@ -68,5 +76,15 @@
     <script src="app/views/loginView.js"></script>
     <script src="app/controllers/Logincontroller.js"></script>
     <script src="app/app.js"></script>
+    <script>
+         if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+            });
+        }
+    </script>
 </body>
 </html>

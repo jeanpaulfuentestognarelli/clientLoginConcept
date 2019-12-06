@@ -14,11 +14,11 @@ function LoginController( ) {
         Llama.post( URL + "authenticate", { username: user, password: pass }, 0 ).then( ( data ) => {
             var message = "Username or password are incorrect";
             if( data.token ) {
+                message = "";
                 console.log( "token:", data.token );
                 var toSave =  {
                     token: data.token
                 }
-
                 localStorage.setItem( "token", JSON.stringify( toSave ) );
                 window.location.href = "/index.html";
             }
