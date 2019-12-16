@@ -1,7 +1,7 @@
 function HomeController() {
-    var _homeView;
-    var URL = "http:///localhost:3000/";
-
+    var _homeView;   
+     var URL = "https://themisds-criminal-server.azurewebsites.net/";
+    //var URL = "http://localhost:3000/";
     this.init = function() {
         _homeView = new HomeView( this );
     }

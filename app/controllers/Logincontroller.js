@@ -1,6 +1,7 @@
 function LoginController( ) {
     var _loginView;
-    var URL = "http:///localhost:3000/";
+    var URL = "https://themisds-criminal-server.azurewebsites.net/";
+    //var URL = "http://localhost:3000/";
 
     this.init = function( ) {
         localStorage.clear();
@@ -26,7 +27,7 @@ function LoginController( ) {
             console.log( data );
         } ).catch( ( error ) => {
             _loginView.receiveResponse( "Error:" + error );
-            console.error( "error:" + error );  
+            console.error( "error:", error );  
         });
     }
 }

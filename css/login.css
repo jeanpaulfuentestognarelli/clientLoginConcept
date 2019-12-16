@@ -1,13 +1,5 @@
 
 
-
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-
- 
-  
   /*//////////////////////////////////////////////////////////////////
   [ RESTYLE TAG ]*/
   
@@ -22,56 +14,10 @@
 
   }
   
-  /*---------------------------------------------*/
-  a {
 
-      font-size: 14px;
-      line-height: 1.7;
-      color: #666666;
-      margin: 0px;
-      transition: all 0.4s;
-      -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-  }
-  
-  a:focus {
-      outline: none !important;
-  }
-  
-  a:hover {
-      text-decoration: none;
-    color: #095B80;
-  }
-  
-  /*---------------------------------------------*/
-  h1,h2,h3,h4,h5,h6 {
-      margin: 0px;
-  }
-  
-  p {
-  
-      font-size: 14px;
-      line-height: 1.7;
-      color: #666666;
-      margin: 0px;
-  }
-  
-  ul, li {
-      margin: 0px;
-      list-style-type: none;
-  }
-  
-  
-  /*---------------------------------------------*/
   input {
       outline: none;
       border: none;
-  }
-  
-  textarea {
-    outline: none;
-    border: none;
   }
   
   textarea:focus, input:focus {
@@ -110,13 +56,6 @@
       background: transparent;
   }
   
-  button:hover {
-      cursor: pointer;
-  }
-  
-  iframe {
-      border: none !important;
-  }
   
   
   /*//////////////////////////////////////////////////////////////////
@@ -128,21 +67,7 @@
     line-height: 1.4;
     text-transform: uppercase;
   }
-  
-  .txt2 {
 
-    font-size: 13px;
-    color: #999999;
-    line-height: 1.4;
-  }
-  
-  .txt3 {
-  
-    font-size: 13px;
-    color: #555555;
-    line-height: 1.4;
-  }
-  
   
   /*//////////////////////////////////////////////////////////////////
   [ login ]*/
